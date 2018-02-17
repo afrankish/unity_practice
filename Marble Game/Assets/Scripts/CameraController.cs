@@ -15,7 +15,7 @@ public class CameraController : MonoBehaviour
     private void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("CamHorizontal");
-        float angle = Time.deltaTime * RotationalSpeed;
+        float angle = Time.deltaTime * RotationalSpeed * moveHorizontal;
 
         _offset = Quaternion.AngleAxis(angle, transform.up) * _offset;
     }
