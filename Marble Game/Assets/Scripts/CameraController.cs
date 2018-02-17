@@ -1,16 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CameraController : MonoBehaviour {
+public class CameraController : MonoBehaviour
+{
+    private Vector3 _offset;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject Focus;
+
+    private void Start()
+    {
+        _offset = transform.position - Focus.transform.position;
+    }
+
+    private void LateUpdate()
+    {
+        transform.position = Focus.transform.position + _offset;
+    }
 }
