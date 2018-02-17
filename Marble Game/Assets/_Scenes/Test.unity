@@ -199,6 +199,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114921781658020936, guid: 5ffb598ed4b751c4a9dc0902c391f6e1,
+        type: 2}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 759532909}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ffb598ed4b751c4a9dc0902c391f6e1, type: 2}
   m_IsPrefabParent: 0
@@ -267,6 +272,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &759532909 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1238050347791868, guid: f5fda0364eb952a41aa1fec4321b9c25,
+    type: 2}
+  m_PrefabInternal: {fileID: 190683615}
 --- !u!1 &847654199 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1844550174994984, guid: 5ffb598ed4b751c4a9dc0902c391f6e1,
