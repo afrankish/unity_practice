@@ -18,6 +18,11 @@ public class CameraController : MonoBehaviour
         float angle = Time.deltaTime * RotationalSpeed * moveHorizontal;
 
         _offset = Quaternion.AngleAxis(angle, transform.up) * _offset;
+
+        float moveVertical = Input.GetAxis("CamVertical");
+        angle = Time.deltaTime * RotationalSpeed * moveVertical;
+
+        _offset = Quaternion.AngleAxis(angle, transform.right) * _offset;
     }
 
     private void LateUpdate()
